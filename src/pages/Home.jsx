@@ -1,4 +1,3 @@
-
 import React from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -12,16 +11,18 @@ import FAQSection from "../components/FAQSection";
 import CTABanner from "../components/CtaBanner";
 
 const Home = () => (
-  <div className="w-full h-full relative bg-white overflow-hidden">
+  <div className="w-full min-h-screen relative bg-white overflow-x-hidden">
     <BackgroundShapes />
     <Header />
-    <Hero />
-    <FeatureBox />
-    <StatsSection />
-    <FeaturesSection />
-    <PricingCards />
-    <URLShortener />
-    <FAQSection />
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Hero />
+      <FeatureBox />
+      <StatsSection />
+      <FeaturesSection />
+      <PricingCards />
+      <URLShortener />
+      <FAQSection />
+    </main>
     <CTABanner />
   </div>
 );
