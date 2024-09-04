@@ -1,7 +1,7 @@
 import React from "react";
 
 const StatsSection = () => (
-  <div className="w-full bg-[#f8fafd] mt-20 py-10 px-6 md:px-14 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
+  <div className="w-full bg-[#f8fafd]  py-10 px-6 md:px-14 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
     {/* Title Section */}
     <div className="w-full md:w-auto flex justify-center md:justify-start items-center">
       <div className="text-center md:text-left">

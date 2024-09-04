@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import vector3 from "../assets/vector3.svg";
 
 const Hero = () => (
   <div className="w-full min-h-[60vh] flex flex-col justify-center items-center px-4 md:px-8 lg:px-16 mt-20">
@@ -12,10 +13,14 @@ const Hero = () => (
         <span className="text-[#005ae2] text-3xl md:text-4xl lg:text-4xl font-['Gilroy-Bold'] leading-tight lg:leading-[1.2]">
           URL Shortening
         </span>
+
         <span className="text-[#141414] text-3xl md:text-4xl lg:text-4xl font-['Gilroy-Bold'] leading-tight lg:leading-[1.2]">
           {" "}
           Solution
         </span>
+        <div>
+          <img src={vector3} className="ml-60" />
+        </div>
       </h1>
       <p className="max-w-lg md:max-w-xl text-[#141414] text-base md:text-lg lg:text-x font-['Gilroy-Medium'] leading-6 md:leading-7 lg:leading-8">
         Personalize your shortened URLs to align with your brand identity.

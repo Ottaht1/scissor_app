@@ -10,7 +10,7 @@ const CTABanner = () => {
 
       <Link
         to="/src/pages/GetAQuotePage.jsx"
-        className="w-full max-w-[200px] h-12 px-6 py-3 bg-[#005ae2] rounded-full flex justify-center items-center"
+        className="w-full max-w-[200px] cursor-pointer mt-6 h-12 px-6 py-3 bg-[#005ae2] rounded-full flex justify-center items-center"
       >
         <span className="text-white text-base font-normal font-['Gilroy-SemiBold'] leading-3">
           Get Started

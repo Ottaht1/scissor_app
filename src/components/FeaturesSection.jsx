@@ -1,4 +1,5 @@
 import React from "react";
+import line from "../assets/line.svg";
 
 const FeatureItem = ({ icon, title, description }) => (
   <div className="flex flex-col justify-start items-start gap-4">
@@ -20,7 +21,13 @@ const FeatureItem = ({ icon, title, description }) => (
 
 const FeaturesSection = () => (
   <div className="w-full px-16 py-10 mt-10 flex flex-col md:flex-row items-start gap-12">
-    <div className="flex flex-col md:w-1/2 items-center md:items-start text-center md:text-left gap-4">
+    {/* Main container for the text and image */}
+    <div className="flex flex-col md:w-1/2 items-center md:items-start text-center md:text-left gap-4 relative">
+      <img
+        src={line}
+        alt="Line"
+        className="absolute left-0 transform -translate-x-4 -translate-y-1/2 md:translate-y-0 top-1/2 md:top-0"
+      />
       <div>
         <span className="text-[#141414] text-3xl md:text-4xl font-['Gilroy-Bold'] leading-loose">
           Why choose{" "}
@@ -38,6 +45,7 @@ const FeaturesSection = () => (
       </div>
     </div>
 
+    {/* Grid for feature items */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:w-1/2">
       <FeatureItem
         icon="🔗"

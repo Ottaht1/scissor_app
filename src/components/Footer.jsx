@@ -1,4 +1,5 @@
 import React from "react";
+import logo2 from "../assets/logo2.svg";
 
 const Footer = () => {
   return (
@@ -7,8 +8,7 @@ const Footer = () => {
         {/* Scissor Logo and Social Links */}
         <div className="flex flex-col items-start gap-4 w-full md:w-1/5 mb-6 md:mb-0">
           <div className="text-2xl font-bold text-[#141414]">
-            <span className="mr-2">ø</span>
-            SCISSOR
+            <img src={logo2} />
           </div>
           <div className="flex gap-4">
             <div className="w-6 h-6 bg-gray-300 rounded-full" /> {/* Twitter */}

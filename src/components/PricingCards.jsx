@@ -1,14 +1,18 @@
 import React from "react";
+import line from "../assets/line.svg";
 
 const PricingCards = () => {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12 bg-white flex flex-col items-center gap-10">
       {/* Header */}
       <div className="flex flex-col items-center gap-4 text-center">
-        <h2 className="text-[#141414] text-4xl font-bold leading-tight">
-          A <span className="text-[#005ae2]">price perfect</span> for your
-          needs.
-        </h2>
+        <div className="flex items-center gap-2">
+          <img src={line} className="" />
+          <h2 className="text-[#141414] text-4xl font-bold leading-tight">
+            A <span className="text-[#005ae2]">price perfect</span> for your
+            needs.
+          </h2>
+        </div>
         <p className="max-w-lg text-base font-medium text-[#141414]">
           From catering for your personal, business, event, and social needs,
           you can be assured we have you in mind in our pricing.
@@ -104,14 +108,15 @@ const PricingCards = () => {
       </div>
 
       {/* Buttons */}
-      <div className="flex flex-col mt-4 md:flex-row justify-center items-center gap-3">
-        <button className="w-full max-w-xs h-12 px-6  rounded-full border border-[#0065fe] text-[#0065fe] text-base font-semibold">
-          Get Custom Pricing
-        </button>
-        <button className="w-full max-w-xs h-12 px-6 py-3 bg-[#0065fe] rounded-full text-white text-base font-semibold">
-          Select Pricing
-        </button>
-      </div>
+<div className="flex flex-col mt-4 md:flex-row justify-center items-center gap-3">
+  <button className="w-full max-w-xs h-12 px-6 whitespace-nowrap rounded-full border border-[#0065fe] text-[#0065fe] text-base font-semibold">
+    Get Custom Pricing
+  </button>
+  <button className="w-full max-w-xs h-12 px-6 py-3 bg-[#0065fe] rounded-full text-white text-base font-semibold">
+    Select Pricing
+  </button>
+</div>
+
     </div>
   );
 };

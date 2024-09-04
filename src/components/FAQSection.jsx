@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import line from "../assets/line.svg";
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -65,12 +66,15 @@ const FAQSection = () => {
       <div className="absolute origin-top-left rotate-[110.54deg] opacity-80 w-[804.53px] h-[596.14px] left-[50%] top-[15%] transform -translate-x-[50%]" />
       <div className="absolute origin-top-left rotate-[-7.59deg] opacity-70 w-[804.53px] h-[596.14px] left-[50%] top-[75%] transform -translate-x-[50%]" />
 
-      <div className="relative max-w-screen-lg mx-auto flex flex-col items-center gap-16">
-        <h1 className="text-[#141414] text-3xl sm:text-4xl font-bold leading-tight text-center">
-          FAQs
-        </h1>
+      <div className="relative max-w-screen-lg mx-auto flex flex-col items-center gap-6">
+        <div className="flex items-center gap-4">
+          <img src={line} className=" h-auto" alt="line" />
+          <h1 className="text-[#141414] text-3xl sm:text-4xl font-bold leading-tight text-center">
+            FAQs
+          </h1>
+        </div>
 
-        <div className="w-full max-w-4xl flex flex-col gap-4">
+        <div className="w-full max-w-4xl flex flex-col gap-4 mt-6">
           {faqItems.map((item, index) => (
             <div key={index} className="border-b border-gray-300 pb-4">
               <div

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo1 from "../assets/logo1.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="text-[#0065fe] text-2xl font-bold">
-            SCISSOR
+            <img src={logo1} />
           </Link>
 
           {/* Desktop Navigation */}
